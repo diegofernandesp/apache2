@@ -1,0 +1,14 @@
+# Virtual Hosts
+#
+
+<VirtualHost *:80>
+	ServerName 192.168.0.52
+	DocumentRoot c:/wamp64/www
+	<Directory  "c:/wamp64/www/">
+		Options +Indexes +Includes +FollowSymLinks +MultiViews
+		AllowOverride all
+        Order deny,allow
+        Allow from all
+	</Directory>
+</VirtualHost>
+#
