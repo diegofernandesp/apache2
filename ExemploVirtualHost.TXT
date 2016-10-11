@@ -12,3 +12,12 @@
 	</Directory>
 </VirtualHost>
 #
+
+This resource explains all we need to configure in order to use slim on Ubuntu (It helped me to solve my 404 issue) :
+
+To summarise, there is two things to configure :
+
+    Activate mod_rewrite a2enmod rewrite
+    Modify the Apache configuration file (change AllowOverride None to AllowOverride All for the document root)
+
+Don't forget to restart apache2 after the changes : service apache2 restart
